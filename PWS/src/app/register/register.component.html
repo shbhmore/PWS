@@ -1,12 +1,25 @@
 <div>
-    <header><h1>Welcome to people with skills</h1></header>
+    <form class="container" id="registerForm" action="">
+
+        <h3>Register yourself</h3>
+        <hr>
+    <div class="container">
+    <div class="mb-3">
+        <label for="userType" class="form-label">Register as:</label>
+        <select class="form-select form-select-lg" name="userType" id="userType" onchange="getMailStatus">
+            <option selected>Job seeker</option>
+            <option value="">Recruiter</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Email</label>
+      <input type="email"
+        class="form-control" name="email" id="mailId" placeholder="Mail Id">
+    </div>
+    <h4>Already registered?<a routerLink="/login">Login</a></h4>
+    </div>
+    </form>
+
     
-    <h3>Register yourself</h3>
-    
-    <label>Register as:</label>
-    
-    <select>
-        <option>Recruiter</option>
-        <option>Job seeker</option>
-    </select>
 </div>

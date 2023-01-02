@@ -5,3 +5,22 @@ li{
     padding: 10px;
     float:right;
 }
+
+.left{
+    width:60%;
+    position:relative;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.right{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+img{
+     border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgb(255, 32, 80),white)1;
+}

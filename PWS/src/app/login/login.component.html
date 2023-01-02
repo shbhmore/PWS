@@ -1,13 +1,19 @@
-<html><head></head><body>
+<div>
     <header><h1>Welcome to people with skills</h1></header>
     
-    <h3>Register yourself</h3>
-    
-    <label>Register as:</label>
-    
-    <select>
-        <option>Recruiter</option>
-        <option>Job seeker</option>
-    </select>
-    
-</body></html>
+    <h2><span class="badge bg-primary">Login</span></h2>
+    <form class="container">
+    <div class="mb-3">
+      <label for="" class="form-label">Email</label>
+      <input type="email" class="form-control" name="" id="un" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Password</label>
+      <input type="password" class="form-control" name="" id="pw" placeholder="">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h4>Not registered?<a routerLink="/register">Register</a></h4>
+</div>

@@ -1,9 +1,14 @@
-<div>
-    <li routerLink="register">Register</li>
-    <li routerLink="login">Login</li>
-    <h1>Welcome to PWS</h1>
+<div class="main_home">
+    <div class="left">
     <h2>People With Skills</h2>
     <p>This is a platform for the job seekers to showcase their skills, get evaluated through continuous tests including MCQs and technical problems.
         Which gives good insight for the recruiters about the candidate they are going to hire.
     </p>
+    <img src="./pws_mainBg.jpg">
+    </div>
+    <div class="right">
+        <li routerLink="register">Register</li>
+        <li routerLink="login">Login</li>
+        <router-outlet></router-outlet>
+    </div>
 </div>

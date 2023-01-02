@@ -1,0 +1,11 @@
+.app{
+    color: crimson;
+    height: 100%;
+}
+
+app-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: black;
+}
