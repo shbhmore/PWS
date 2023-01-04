@@ -1,12 +1,11 @@
 <div>
     <form class="container" id="registerForm" action="">
-
-        <h3>Register yourself</h3>
+        <h3>Register</h3>
         <hr>
     <div class="container">
     <div class="mb-3">
         <label for="userType" class="form-label">Register as:</label>
-        <select class="form-select form-select-lg" name="userType" id="userType" onchange="getMailStatus">
+        <select class="form-select" name="userType" id="userType" onchange="getMailStatus">
             <option selected>Job seeker</option>
             <option value="">Recruiter</option>
         </select>
@@ -14,10 +13,28 @@
 
     <div class="mb-3">
       <label for="" class="form-label">Email</label>
-      <input type="email"
-        class="form-control" name="email" id="mailId" placeholder="Mail Id">
+      <input type="email" class="form-control" name="email" id="mailId" placeholder="Mail Id">
     </div>
-    <h4>Already registered?<a routerLink="/login">Login</a></h4>
+
+    <div class="full-name">
+        <div class="mb-3">
+            <label for="" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="fn" placeholder="Abc">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Last Name</label>
+          <input type="text" class="form-control" name="lastName" id="ln" placeholder="Xyz">
+        </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Phone No.</label>
+      <input type="tel" class="form-control" name="" id=""placeholder="1234567890">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <!--<h4>Already registered?<a routerLink="/login">Login</a></h4>-->
     </div>
     </form>
 

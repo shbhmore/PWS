@@ -1,9 +1,7 @@
-li{
-    list-style: none;
-    position:relative;
-    display:inline-flex;
-    padding: 10px;
-    float:right;
+.main_home{
+    width:96%;
+    margin:2%;
+    height: 650px;
 }
 
 .left{
@@ -11,16 +9,59 @@ li{
     position:relative;
     display: inline-flex;
     flex-direction: column;
+    height: inherit;
 }
 
 .right{
+    width: 40%;
     position: relative;
     display: inline-flex;
     flex-direction: column;
+    height: inherit;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+li{
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f25;
+    color: bisque;
+    margin-inline: 10px;
+}
+
+li:active{
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: bisque;
+    color: #f25;
+    margin-inline: 10px;
+}
+
+li:visited{
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: green;
+    color: bisque;
+    margin-inline: 10px;
 }
 
 img{
      border-width: 10px;
     border-style: solid;
     border-image: linear-gradient(90deg, rgb(255, 32, 80),white)1;
+}
+
+.outlet{
+    margin: 10px;
+    border-top: 2px solid #f25;
+    border-radius: 20px;
 }
