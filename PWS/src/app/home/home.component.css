@@ -55,7 +55,8 @@ li:visited{
 }
 
 img{
-     border-width: 10px;
+    /*background-image: url("./pws_mainBg.jpg");
+    */ border-width: 10px;
     border-style: solid;
     border-image: linear-gradient(90deg, rgb(255, 32, 80),white)1;
 }

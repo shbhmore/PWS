@@ -3,17 +3,18 @@
         <h3>Register</h3>
         <hr>
     <div class="container">
+
     <div class="mb-3">
-        <label for="userType" class="form-label">Register as:</label>
-        <select class="form-select" name="userType" id="userType" onchange="getMailStatus">
-            <option selected>Job seeker</option>
-            <option value="">Recruiter</option>
-        </select>
+      <label for="" class="form-label" (ngModel)="mailId">Email</label>
+      <input type="email" class="form-control" name="email" id="mailId" placeholder="Mail Id">
     </div>
 
     <div class="mb-3">
-      <label for="" class="form-label">Email</label>
-      <input type="email" class="form-control" name="email" id="mailId" placeholder="Mail Id">
+      <label for="userType" class="form-label">Register as:</label>
+      <select class="form-select" name="userType" id="userType" onclick="getEmpByMail" (ngModel)="profileType">
+          <option disabled>Job seeker</option>
+          <option selected >Recruiter</option>
+      </select>
     </div>
 
     <div class="full-name">
